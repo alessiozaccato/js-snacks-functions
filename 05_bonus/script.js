@@ -9,10 +9,22 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function greetings(nameToGreet) {
+    let greet = "";
+    //using Date object for the first time
+    const d = new Date();
+    if (d <= 13) {
+        return greet = `buongiorno ${nameToGreet}`;
+    } else if (d >= 13 && d <= 17) {
+        return greet = `buon pomeriggio ${nameToGreet}`;
+    } else if (d >= 17) {
+        return greet = `buonasera ${nameToGreet}`
+    }
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(greetings(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
