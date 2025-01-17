@@ -13,11 +13,11 @@ function greetings(nameToGreet) {
     let greet = "";
     //using Date object for the first time
     const d = new Date();
-    if (d <= 13) {
+    if (d.getHours() <= 13) {
         return greet = `buongiorno ${nameToGreet}`;
-    } else if (d >= 13 && d <= 17) {
+    } else if (d.getHours() >= 13 && d <= 17) {
         return greet = `buon pomeriggio ${nameToGreet}`;
-    } else if (d >= 17) {
+    } else if (d.getHours() >= 17) {
         return greet = `buonasera ${nameToGreet}`
     }
 }
